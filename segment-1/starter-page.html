@@ -3,13 +3,117 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- BUG 1: Title is a generic placeholder — should be descriptive and keyword-rich -->
-  <title>Page Title Here</title>
-  <!-- BUG 2: Meta description is missing entirely -->
+  <title>Website Studio — AI Landing Page Builder by Search Atlas</title>
+  <meta name="description" content="Generate high-converting landing pages in minutes with Website Studio, the AI landing page builder by Search Atlas. Describe your page, edit with commands, and publish instantly on CDN-hosted infrastructure.">
+  <link rel="canonical" href="https://searchatlas.com/website-studio/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Search Atlas">
+  <meta property="og:url" content="https://searchatlas.com/website-studio/">
+  <meta property="og:title" content="Website Studio — AI Landing Page Builder by Search Atlas">
+  <meta property="og:description" content="Generate high-converting landing pages in minutes with Website Studio, the AI landing page builder by Search Atlas. Describe your page, edit with commands, and publish instantly on CDN-hosted infrastructure.">
+  <meta property="og:image" content="https://searchatlas.com/images/website-studio-og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Website Studio AI landing page builder interface">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@SearchAtlas">
+  <meta name="twitter:url" content="https://searchatlas.com/website-studio/">
+  <meta name="twitter:title" content="Website Studio — AI Landing Page Builder by Search Atlas">
+  <meta name="twitter:description" content="Generate high-converting landing pages in minutes with Website Studio, the AI landing page builder by Search Atlas. Describe your page, edit with commands, and publish instantly on CDN-hosted infrastructure.">
+  <meta name="twitter:image" content="https://searchatlas.com/images/website-studio-og.jpg">
+  <meta name="twitter:image:alt" content="Website Studio AI landing page builder interface">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- Schema Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://searchatlas.com/#organization",
+        "name": "Search Atlas",
+        "url": "https://searchatlas.com",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://searchatlas.com/images/logo.png"
+        },
+        "sameAs": [
+          "https://www.linkedin.com/company/searchatlas",
+          "https://www.instagram.com/searchatlas",
+          "https://www.facebook.com/searchatlas"
+        ]
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://searchatlas.com/website-studio/#software",
+        "name": "Website Studio",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Web",
+        "description": "AI landing page builder that generates complete, conversion-ready landing pages from a single prompt. Pages are published with CDN hosting, free SSL, tracking scripts, and lead capture built in.",
+        "url": "https://searchatlas.com/website-studio/",
+        "publisher": {
+          "@id": "https://searchatlas.com/#organization"
+        },
+        "featureList": [
+          "Prompt-based page generation",
+          "Clone Website Mode",
+          "PPC Landing Page Generator",
+          "Static CDN Hosting",
+          "AI Page Editing",
+          "Lead Capture Forms",
+          "Tracking Script Support",
+          "Custom Domain Publishing",
+          "White-Label Website Builder"
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is an AI landing page builder?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "An AI landing page builder is software that creates landing pages using artificial intelligence instead of manual design or templates. Website Studio applies this by generating page structure, layout, and content from a prompt."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How does an AI landing page builder work?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Website Studio's AI analyzes your prompt to understand your business, audience, and goals, then generates a complete page structure with hero sections, feature blocks, testimonials, CTAs, and more — all optimized for conversion and SEO."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Who is Website Studio built for?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Website Studio is built for marketers, agencies, and growth teams who need to create and launch high-performing landing pages at scale — without needing developers or design tools."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do I need coding experience to use Website Studio?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No coding is required. Website Studio is designed for marketers and non-technical users. You describe what you need in plain language, and the AI handles the rest — from page structure to publishing."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -656,8 +760,7 @@
     </p>
     <div class="testimonial-author">
       <div class="testimonial-avatar">
-        <!-- BUG 5: Missing meaningful alt text on both images below -->
-        <img src="https://www.figma.com/api/mcp/asset/ab623ef9-9c59-4a81-b85e-2b112d5ce33f" alt="">
+        <img src="https://www.figma.com/api/mcp/asset/ab623ef9-9c59-4a81-b85e-2b112d5ce33f" alt="Bruce Beck, CEO at DB&R">
       </div>
       <div style="text-align:center">
         <div class="testimonial-name">Bruce Beck</div>
@@ -695,8 +798,7 @@
 <section class="what-is">
   <div class="what-is-inner">
     <div class="what-is-left">
-      <!-- BUG 3 (cont): Second H1 — this should be an H2 -->
-      <h1 class="what-is-heading">What Is Website Studio?</h1>
+      <h2 class="what-is-heading">What Is Website Studio?</h2>
       <div class="what-is-body">
         <p><strong>Website Studio</strong> by Search Atlas is an AI Landing Page Builder that automatically generates complete, conversion-ready landing pages. Pages are created, structured, and published from a single input, ready to rank, capture demand, and convert.</p>
         <br>
@@ -707,8 +809,7 @@
       <a href="#" class="btn-primary" style="align-self:flex-start">Get Started Now</a>
     </div>
     <div class="what-is-image">
-      <!-- BUG 5 (cont): Empty alt on a meaningful content image -->
-      <img src="https://www.figma.com/api/mcp/asset/5afc0714-14d7-4e76-b237-850e4813ce12" alt="">
+      <img src="https://www.figma.com/api/mcp/asset/5afc0714-14d7-4e76-b237-850e4813ce12" alt="Website Studio AI landing page builder interface showing generated page layout">
     </div>
   </div>
 </section>
@@ -917,28 +1018,28 @@
       <div class="faq-item open">
         <div class="faq-question" onclick="toggleFaq(this)">
           <!-- BUG 4: Should be an H3 for correct hierarchy, not a span -->
-          <h4 class="faq-question-text">What is an AI landing page builder?</h4>
+          <h3 class="faq-question-text">What is an AI landing page builder?</h3>
           <button class="faq-toggle open" aria-label="Toggle">&#8722;</button>
         </div>
         <p class="faq-answer">An AI landing page builder is software that creates landing pages using artificial intelligence instead of manual design or templates. Website Studio applies this by generating page structure, layout, and content from a prompt.</p>
       </div>
       <div class="faq-item">
         <div class="faq-question" onclick="toggleFaq(this)">
-          <h4 class="faq-question-text">How does an AI landing page builder work?</h4>
+          <h3 class="faq-question-text">How does an AI landing page builder work?</h3>
           <button class="faq-toggle" aria-label="Toggle">&#43;</button>
         </div>
         <p class="faq-answer">Website Studio's AI analyzes your prompt to understand your business, audience, and goals, then generates a complete page structure with hero sections, feature blocks, testimonials, CTAs, and more — all optimized for conversion and SEO.</p>
       </div>
       <div class="faq-item">
         <div class="faq-question" onclick="toggleFaq(this)">
-          <h4 class="faq-question-text">Who is Website Studio built for?</h4>
+          <h3 class="faq-question-text">Who is Website Studio built for?</h3>
           <button class="faq-toggle" aria-label="Toggle">&#43;</button>
         </div>
         <p class="faq-answer">Website Studio is built for marketers, agencies, and growth teams who need to create and launch high-performing landing pages at scale — without needing developers or design tools.</p>
       </div>
       <div class="faq-item">
         <div class="faq-question" onclick="toggleFaq(this)">
-          <h4 class="faq-question-text">Do I need coding experience to use Website Studio?</h4>
+          <h3 class="faq-question-text">Do I need coding experience to use Website Studio?</h3>
           <button class="faq-toggle" aria-label="Toggle">&#43;</button>
         </div>
         <p class="faq-answer">No coding is required. Website Studio is designed for marketers and non-technical users. You describe what you need in plain language, and the AI handles the rest — from page structure to publishing.</p>

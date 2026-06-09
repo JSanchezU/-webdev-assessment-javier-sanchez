@@ -1,0 +1,29 @@
+User-agent: *
+Allow: /
+
+# Block admin, auth, and internal tooling paths
+Disallow: /admin/
+Disallow: /login/
+Disallow: /dashboard/
+Disallow: /api/
+Disallow: /private/
+
+# Block search and filter result pages to avoid duplicate content
+Disallow: /*?*sort=
+Disallow: /*?*filter=
+Disallow: /*?*utm_
+
+# AI crawlers — allow for brand visibility in AI search
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+Sitemap: https://searchatlas.com/sitemap.xml
