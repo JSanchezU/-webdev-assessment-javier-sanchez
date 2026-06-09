@@ -1054,8 +1054,7 @@
     <div class="form-section">
       <h2 class="form-section-heading">Ready to Build Your First Page?</h2>
       <p class="form-section-sub">Enter your details and our team will show you how Website Studio can accelerate your marketing.</p>
-      <!-- Task C: embed a HubSpot form here using hbspt.forms.create() and add GTM tracking -->
-      <div id="hubspot-form-target">[ HubSpot form loads here ]</div>
+      <div id="hubspot-form-target"></div>
     </div>
   </div>
 </section>
@@ -1125,25 +1124,34 @@
     btn.classList.add('active');
   }
 
-  /*
-   * Task C — HubSpot form embed goes here.
-   * Replace YOUR_PORTAL_ID and YOUR_FORM_ID with real values.
-   *
-   * Example:
-   *
-   * <script src="//js.hsforms.net/forms/embed/v2.js"><\/script>
-   * <script>
-   *   hbspt.forms.create({
-   *     region: "na1",
-   *     portalId: "YOUR_PORTAL_ID",
-   *     formId: "YOUR_FORM_ID",
-   *     target: "#hubspot-form-target",
-   *     onFormSubmit: function($form) {
-   *       // GTM DataLayer push goes here
-   *     }
-   *   });
-   * <\/script>
-   */
+</script>
+
+<!-- HubSpot Embed -->
+<script src="//js.hsforms.net/forms/embed/v2.js" defer></script>
+<script>
+  window.addEventListener('load', function () {
+    hbspt.forms.create({
+      region: 'na1',
+      portalId: 'YOUR_PORTAL_ID',
+      formId: 'YOUR_FORM_ID',
+      target: '#hubspot-form-target',
+      onFormSubmit: function ($form) {
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+          event: 'hubspot_form_submit',
+          formId: 'YOUR_FORM_ID',
+          pageUrl: window.location.href,
+          pageTitle: document.title
+        });
+      },
+      onFormSubmitted: function () {
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+          event: 'hubspot_form_submitted'
+        });
+      }
+    });
+  });
 </script>
 </body>
 </html>
